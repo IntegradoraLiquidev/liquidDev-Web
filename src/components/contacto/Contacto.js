@@ -11,7 +11,9 @@ class Contacto extends React.Component {
   render() {
     return (
       <>
-        <Menu />
+        <header id="Menu">
+          <Menu />
+        </header>
 
         <main role="main" className="flex-shrink-0 mt-5">
           <div className="container">

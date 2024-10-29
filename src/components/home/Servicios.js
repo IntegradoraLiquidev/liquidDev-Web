@@ -1,105 +1,80 @@
 import React from "react";
 //import './Slider.css';
 
+import imagen from "../../assets/imagenes/img-1.jpg";
+import Image from "react-bootstrap/Image";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
+import Container from "react-bootstrap/Container";
 class Servicios extends React.Component {
   render() {
     return (
-      <div className="container servicios">
-        <div className="row">
-          <div className="col-lg-4">
-            <svg
-              className="bd-placeholder-img rounded-circle"
-              width="140"
-              height="140"
-              xmlns="https://www.w3.org/2000/svg"
-              preserveAspectRatio="xMidYMid slice"
-              focusable="false"
-              role="img"
-              aria-label="Placeholder: 140x140"
-            >
-              <title>Placeholder</title>
-              <rect width="100%" height="100%" fill="#777" />
-              <text x="50%" y="50%" fill="#777" dy=".3em">
-                140x140
-              </text>
-            </svg>
-            <h2>Servicio 1</h2>
-            <p>
-              Donec sed odio dui. Etiam porta sem malesuada magna mollis
-              euismod. Nullam id dolor id nibh ultricies vehicula ut id elit.
-              Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
-              Praesent commodo cursus magna.
-            </p>
-            <p>
-              <a className="btn btn-secondary" href="#" role="button">
-                Leer más &raquo;
-              </a>
-            </p>
+      <section id="services" className="block services-block">
+        <Container>
+          <div className="title-holder">
+            <h2>Servicios</h2>
+            <div className="subtitle">Algunos de nuestros Servicios</div>
           </div>
-
-          <div className="col-lg-4">
-            <svg
-              className="bd-placeholder-img rounded-circle"
-              width="140"
-              height="140"
-              xmlns="https://www.w3.org/2000/svg"
-              preserveAspectRatio="xMidYMid slice"
-              focusable="false"
-              role="img"
-              aria-label="Placeholder: 140x140"
-            >
-              <title>Placeholder</title>
-              <rect width="100%" height="100%" fill="#777" />
-              <text x="50%" y="50%" fill="#777" dy=".3em">
-                140x140
-              </text>
-            </svg>
-            <h2>Servicio 2</h2>
-            <p>
-              Duis mollis, est non commodo luctus, nisi erat porttitor ligula,
-              eget lacinia odio sem nec elit. Cras mattis consectetur purus sit
-              amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor
-              mauris condimentum nibh.
-            </p>
-            <p>
-              <a className="btn btn-secondary" href="#" role="button">
-                Leer más &raquo;
-              </a>
-            </p>
-          </div>
-
-          <div className="col-lg-4">
-            <svg
-              className="bd-placeholder-img rounded-circle"
-              width="140"
-              height="140"
-              xmlns="https://www.w3.org/2000/svg"
-              preserveAspectRatio="xMidYMid slice"
-              focusable="false"
-              role="img"
-              aria-label="Placeholder: 140x140"
-            >
-              <title>Placeholder</title>
-              <rect width="100%" height="100%" fill="#777" />
-              <text x="50%" y="50%" fill="#777" dy=".3em">
-                140x140
-              </text>
-            </svg>
-            <h2>Servicio 3</h2>
-            <p>
-              Donec sed odio dui. Cras justo odio, dapibus ac facilisis in,
-              egestas eget quam. Vestibulum id ligula porta felis euismod
-              semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris
-              condimentum nibh, ut fermentum massa justo sit amet risus.
-            </p>
-            <p>
-              <a className="btn btn-secondary" href="#" role="button">
-                Leer más &raquo;
-              </a>
-            </p>
-          </div>
-        </div>
-      </div>
+          <Row>
+            <Col sm={4} className="holder">
+              <Image src={imagen} rounded />
+              <h2>Desarrollo de Aplicaciones Móviles Personalizadas</h2>
+              <p>
+                Creamos aplicaciones móviles únicas y adaptadas a las
+                necesidades específicas de tu negocio o proyecto. Desde el
+                diseño intuitivo de interfaces hasta funcionalidades avanzadas,
+                garantizamos que tu aplicación destaque en cualquier plataforma
+                (iOS, Android o multiplataforma). Nuestro enfoque combina
+                metodologías ágiles y tecnologías modernas para entregar
+                soluciones rápidas, seguras y de alto rendimiento que impulsen
+                tu éxito en el mundo móvil.
+              </p>
+              <p>
+                <a className="btn btn-primary" href="/servicios" role="button">
+                  Leer más &raquo;
+                </a>
+              </p>
+            </Col>
+            <Col sm={4} className="holder">
+              <Image src={imagen} rounded />
+              <h2>Desarrollo de aplicaciones Web</h2>
+              <p>
+                Transformamos tus ideas en aplicaciones web robustas, escalables
+                y fáciles de usar. Nos especializamos en crear soluciones
+                optimizadas para ofrecer una experiencia fluida en cualquier
+                dispositivo y navegador. Con diseños atractivos y un enfoque en
+                la funcionalidad, nuestras aplicaciones web están diseñadas para
+                satisfacer las demandas de usuarios y empresas en un entorno
+                digital competitivo.
+              </p>
+              <p>
+                <a className="btn btn-primary" href="/servicios" role="button">
+                  Leer más &raquo;
+                </a>
+              </p>
+            </Col>
+            <Col sm={4} className="holder">
+              <Image src={imagen} rounded />
+              <h2>Automatización de Procesos Empresariales</h2>
+              <p>
+                Optimiza la eficiencia de tu empresa con soluciones
+                personalizadas de automatización. Implementamos tecnologías
+                avanzadas para transformar tareas repetitivas en procesos
+                rápidos y precisos, reduciendo costos y errores. Desde la
+                integración de sistemas hasta flujos de trabajo automatizados,
+                nuestras soluciones están diseñadas para mejorar la
+                productividad, liberar recursos y permitirte enfocarte en lo que
+                realmente importa: el crecimiento de tu negocio.
+              </p>
+              <p>
+                <a className="btn btn-primary" href="/servicios" role="button">
+                  Leer más &raquo;
+                </a>
+              </p>
+            </Col>
+          </Row>
+        </Container>
+      </section>
     );
   }
 }
