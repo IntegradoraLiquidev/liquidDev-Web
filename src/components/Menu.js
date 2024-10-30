@@ -4,37 +4,22 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
-function Menu() {
+
+export default function Menu() {
   return (
-    <>
-      <Navbar
-        bg="primary"
-        className="navbar-expand-md fixed-top "
-        data-bs-theme="dark"
-      >
-        <Container>
-          <Navbar.Brand href="">LiquidDev</Navbar.Brand>
+    <Navbar bg="ligth" expand="lg">
+      <Container>
+        <Navbar.Brand href="/">LiquidDev</Navbar.Brand>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
             <Nav.Link href="/">Inicio</Nav.Link>
             <Nav.Link href="/servicios">Servicios</Nav.Link>
             <Nav.Link href="/portafolio">Portafolio</Nav.Link>
             <Nav.Link href="/contacto">Contacto</Nav.Link>
           </Nav>
-          <Form className="d-flex">
-            <Form.Control
-              type="search"
-              placeholder="Search"
-              className="me-2"
-              aria-label="Search"
-            />
-            <Button variant="outline-light">Search</Button>
-          </Form>
-        </Container>
-      </Navbar>
-
-      <br />
-    </>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
   );
 }
-
-export default Menu;
