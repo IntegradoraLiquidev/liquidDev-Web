@@ -17,7 +17,7 @@ class Servicios extends React.Component {
               role="img"
               aria-label="Placeholder: 140x140"
             >
-              <title>Placeholder</title>
+              <title>Placeholder </title>
               <rect width="100%" height="100%" fill="#777" />
               <text x="50%" y="50%" fill="#777" dy=".3em">
                 140x140
