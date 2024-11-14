@@ -15,7 +15,7 @@ class Contacto extends React.Component {
 
         <main role="main" className="flex-shrink-0 mt-5">
           <div className="container">
-            <h1 className="mb-5">Contacto</h1>
+            <h1 className="mb-5"> Contacto</h1>
 
             <div className="row">
               <div className="col-md-6">
