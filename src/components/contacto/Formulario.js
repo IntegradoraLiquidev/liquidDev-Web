@@ -4,7 +4,7 @@ import "../../App.css";
 class Formulario extends React.Component {
   render() {
     return (
-      <form className="mb-5">
+      <form className="mb-5" data-aos="fade-right" data-aos-delay="50">
         <div className="form-group">
           <label htmlFor="nya" className="negrita">
             Nombres y Apellidos

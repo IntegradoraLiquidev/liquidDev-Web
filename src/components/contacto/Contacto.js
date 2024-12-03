@@ -1,4 +1,7 @@
 import React from "react";
+import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
 
 import Menu from "../Menu";
 import Formulario from "./Formulario";
@@ -11,23 +14,24 @@ class Contacto extends React.Component {
   render() {
     return (
       <>
-        <Menu />
-
-        <main role="main" className="flex-shrink-0 mt-5">
-          <div className="container">
-            <h1 className="mb-5"> Contacto</h1>
-
-            <div className="row">
-              <div className="col-md-6">
-                <Formulario />{" "}
-              </div>
-
-              <div className="col-md-6">
-                <Mapa />{" "}
-              </div>
-            </div>
-          </div>
-        </main>
+        <header id="header">
+          <Menu />
+        </header>
+        <section id="contact" className="block contact-block">
+          <Container>
+            <h1 className="mb-5" data-aos="fade-right" data-aos-delay="60">
+              Contactanos
+            </h1>
+            <Row>
+              <Col mb={6}>
+                <Formulario />
+              </Col>
+              <Col mb={6}>
+                <Mapa />
+              </Col>
+            </Row>
+          </Container>
+        </section>
 
         <Footer />
       </>
